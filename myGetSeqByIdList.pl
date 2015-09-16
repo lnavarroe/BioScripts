@@ -2,7 +2,7 @@
 #-----------------------------------------------------------------------------------------
 # myGetSeqByIdList.pl
 # Extract sequences from a fasta file based on a ID list text file. Extracted sequences
-# are saved in file: "selected_sequences.fasta".
+# are saved in file: "$ARGV[0].selected_sequences.fasta".
 #
 # Usage: myGetSeqByIdList.pl sequence.fasta ID.list
 # 	
@@ -30,7 +30,7 @@ while ( my $line = <$list> ) {
 
 my $num_ids = @IdList; # count the number of Ids is the Id-file
 
-open ( my $outfile, '>', "selected_sequences.fasta" );
+open ( my $outfile, '>', "$ARGV[0].selected_sequences.fasta" );
  
 #Read each id in the id-list
 my $count = 0;
