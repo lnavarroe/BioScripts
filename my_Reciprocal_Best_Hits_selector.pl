@@ -13,7 +13,6 @@
 # The final output is a tabulated file listing each pair of RBHs with some additional
 # information
 #
-# Enjoy!!
 #
 # Lucio Navarro			Feb. 2016
 ##########################################################################################
